@@ -1,0 +1,50 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "description": "Whale Bot",
+  "main": "bot.ts",
+  "author": "Gru",
+  "license": "MIT",
+  "dependencies": {
+    "@metaplex-foundation/js": "^0.20.1",
+    "@metaplex-foundation/mpl-token-metadata": "^3.2.1",
+    "@metaplex-foundation/umi": "^0.9.1",
+    "@openbook-dex/openbook": "^0.0.9",
+    "@raydium-io/raydium-sdk": "^1.3.1-beta.47",
+    "@solana/spl-token": "^0.4.0",
+    "@solana/web3.js": "^1.89.1",
+    "@types/bs58": "^4.0.4",
+    "async-mutex": "^0.5.0",
+    "axios": "^1.6.8",
+    "bigint-buffer": "^1.1.5",
+    "bip39": "^3.1.0",
+    "bn.js": "^5.2.1",
+    "bottleneck": "^2.19.5",
+    "bs58": "^5.0.0",
+    "dotenv": "^16.4.1",
+    "ed25519-hd-key": "^1.3.0",
+    "jito-ts": "^3.0.1",
+    "mongoose": "^8.3.4",
+    "node-fetch": "2",
+    "node-telegram-bot-api": "^0.64.0",
+    "pino": "^8.18.0",
+    "pino-pretty": "^10.3.1",
+    "pino-std-serializers": "^6.2.2",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "dev": "ts-node-dev index.ts",
+    "start": "ts-node index.ts",
+    "test-sniper": "ts-node ./module/sniping/index.ts",
+    "build": "tsc --build"
+  },
+  "devDependencies": {
+    "@types/bn.js": "^5.1.5",
+    "@types/node-telegram-bot-api": "^0.64.3",
+    "prettier": "^3.2.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

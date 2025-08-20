@@ -1,0 +1,9 @@
+# Example target wallet addresses
+# Add one wallet address per line
+# The bot will monitor these wallets and copy their Pump.fun transactions
+# Remove the # comments and replace with actual wallet addresses
+
+# Example wallet addresses (replace with real addresses):
+# 9WzDXwBbmkg8ZTbNMqUxvQRAyrZzDsGYdLVL9zYtAWWM
+# 7xKXtg2CW87d97TXJSDpbD5jBkheTqA83TZRuJosgAsU
+# 5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1

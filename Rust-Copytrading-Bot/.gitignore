@@ -1,0 +1,4 @@
+.env
+target
+targetlist.txt
+*.tar.gz

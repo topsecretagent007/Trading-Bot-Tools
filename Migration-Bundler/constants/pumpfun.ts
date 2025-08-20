@@ -1,0 +1,25 @@
+import BigNumber from "bignumber.js";
+
+const PUMPFUN_POOL_AUTH = "pool-authority";
+const BONDING_CURVE_SEED = "bonding-curve"
+const PUMPFUN_GLOBAL = "global"
+const PUMPFUN_CREATOR_VAULT = "creator-vault"
+const PUMPFUN_LP_MINT = "pool_lp_mint"
+
+const PUMPFUN_LIQ_TOKEN_DIFFERENCE = BigNumber(279_900_000_000_000)
+const PUMPFUN_LIQ_SOL_DIFFERENCE = BigNumber(30_000_000_000)
+
+const PROTOCOL_FEE_RATE = 0.01
+const CREATOR_FEE_RATE = 0.001
+
+export {
+    BONDING_CURVE_SEED,
+    PUMPFUN_LP_MINT,
+    PUMPFUN_GLOBAL,
+    PUMPFUN_POOL_AUTH,
+    PUMPFUN_CREATOR_VAULT,
+    PUMPFUN_LIQ_TOKEN_DIFFERENCE,
+    PUMPFUN_LIQ_SOL_DIFFERENCE,
+    PROTOCOL_FEE_RATE,
+    CREATOR_FEE_RATE
+}

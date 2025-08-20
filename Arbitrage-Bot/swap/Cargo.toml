@@ -1,0 +1,9 @@
+[workspace]
+members = [
+    "programs/*"
+]
+
+[workspace.dependencies]
+anchor-lang = "0.29.0"
+anchor-spl = "0.29.0"
+solana-program = "1.17.0"

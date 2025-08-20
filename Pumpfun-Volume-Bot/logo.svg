@@ -1,0 +1,19 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="#1a1a1a" stroke="#4a4a4a" stroke-width="2"/>
+  
+  <!-- Pump symbol -->
+  <rect x="70" y="60" width="60" height="80" rx="8" fill="#00ff88" stroke="#00cc6a" stroke-width="2"/>
+  
+  <!-- Volume bars -->
+  <rect x="85" y="75" width="8" height="20" fill="#ffffff"/>
+  <rect x="97" y="70" width="8" height="25" fill="#ffffff"/>
+  <rect x="109" y="65" width="8" height="30" fill="#ffffff"/>
+  
+  <!-- Bot indicator -->
+  <circle cx="100" cy="120" r="8" fill="#ff6b6b"/>
+  <circle cx="100" cy="120" r="4" fill="#ffffff"/>
+  
+  <!-- Text -->
+  <text x="100" y="160" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="12" font-weight="bold">PUMPFUN VOLUME BOT</text>
+</svg> 

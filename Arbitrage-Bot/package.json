@@ -1,0 +1,52 @@
+{
+  "name": "solana-arbitrage-bot",
+  "version": "2.1.0",
+  "description": "High-performance Solana arbitrage bot with multi-DEX support",
+  "main": "index.js",
+  "scripts": {
+    "setup": "./setup.sh",
+    "start": "cd offchain && cargo run --release -- --cluster mainnet",
+    "dev": "cd offchain && cargo run -- --cluster mainnet",
+    "build": "cd offchain && cargo build --release && cd ../mainnet && npm run build",
+    "test": "cd offchain && cargo test && cd ../mainnet && npm test",
+    "monitor": "node scripts/monitor.js",
+    "check-balances": "cd mainnet && npm run dev",
+    "analyze": "cd onchain && node analyze.js",
+    "lint": "cd mainnet && npm run lint",
+    "format": "cd mainnet && npm run format"
+  },
+  "keywords": [
+    "solana",
+    "arbitrage",
+    "defi",
+    "trading",
+    "bot",
+    "dex",
+    "orca",
+    "serum",
+    "aldrin",
+    "saber",
+    "mercurial"
+  ],
+  "author": "moonbot777",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moonbot777/Arbitrage-TS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/moonbot777/Arbitrage-TS/issues"
+  },
+  "homepage": "https://github.com/moonbot777/Arbitrage-TS#readme",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0"
+  },
+  "workspaces": [
+    "mainnet",
+    "offchain"
+  ]
+} 

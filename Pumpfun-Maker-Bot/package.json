@@ -1,0 +1,57 @@
+{
+  "name": "pumpfun-volume-bot",
+  "author": "greenfox",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moonbot777/Pumpfun-Volume-Bot.git"
+  },
+  "scripts": {
+    "start": "ts-node index.ts",
+    "close": "ts-node ./processes/process_bundle/closeLut.ts",
+    "status": "ts-node status.ts",
+    "build": "tsc",
+    "test": "npm run build && node ./dist/index.js",
+    "manual-sell": "ts-node ./processes/manualSell.ts",
+    "manual-gather": "ts-node ./processes/manualGather.ts",
+    "feat-js": "npm run build && node ./dist/test.js",
+    "feat": "ts-node ./test.ts"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@coral-xyz/anchor": "^0.30.1",
+    "@solana/spl-token": "^0.4.0",
+    "@solana/web3.js": "^1.89.1",
+    "@types/bn.js": "^5.1.5",
+    "@types/body-parser": "^1.19.5",
+    "@types/bs58": "^4.0.4",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^20.14.1",
+    "@types/node-cron": "^3.0.11",
+    "dotenv": "^16.4.5",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "@fleekxyz/sdk": "^1.4.2",
+    "@raydium-io/raydium-sdk": "^1.3.1-beta.58",
+    "axios": "^1.7.9",
+    "axios-rate-limit": "^1.4.0",
+    "body-parser": "^1.20.2",
+    "bs58": "^6.0.0",
+    "bull": "^4.16.5",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.13",
+    "express": "^4.21.2",
+    "ioredis": "^5.4.1",
+    "jito-ts": "^4.2.0",
+    "js-sha256": "^0.11.0",
+    "mongodb": "^6.12.0",
+    "mongoose": "^8.8.4",
+    "node-cron": "^3.0.3",
+    "tslib": "^2.8.1",
+    "typescript": "^5.3.3",
+    "undici": "^6.19.2",
+    "workerpool": "^9.2.0"
+  }
+}

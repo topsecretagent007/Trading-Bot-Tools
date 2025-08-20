@@ -1,0 +1,137 @@
+{
+  "version": "2.1.0",
+  "description": "Solana Arbitrage Bot Configuration",
+  
+  "network": {
+    "mainnet": {
+      "rpc_endpoint": "https://api.mainnet-beta.solana.com",
+      "ws_endpoint": "wss://api.mainnet-beta.solana.com",
+      "commitment": "confirmed"
+    },
+    "devnet": {
+      "rpc_endpoint": "https://api.devnet.solana.com",
+      "ws_endpoint": "wss://api.devnet.solana.com",
+      "commitment": "confirmed"
+    },
+    "localnet": {
+      "rpc_endpoint": "http://127.0.0.1:8899",
+      "ws_endpoint": "ws://127.0.0.1:8900",
+      "commitment": "confirmed"
+    }
+  },
+  
+  "trading": {
+    "min_profit_threshold": 1000000,
+    "max_slippage": 0.5,
+    "max_transaction_size": 4,
+    "gas_priority": "high",
+    "retry_attempts": 3,
+    "retry_delay": 1000
+  },
+  
+  "dexes": {
+    "orca": {
+      "enabled": true,
+      "priority": 1,
+      "min_liquidity": 1000000,
+      "max_impact": 0.1
+    },
+    "serum": {
+      "enabled": true,
+      "priority": 2,
+      "min_liquidity": 500000,
+      "max_impact": 0.05
+    },
+    "aldrin": {
+      "enabled": true,
+      "priority": 3,
+      "min_liquidity": 750000,
+      "max_impact": 0.08
+    },
+    "saber": {
+      "enabled": true,
+      "priority": 4,
+      "min_liquidity": 600000,
+      "max_impact": 0.06
+    },
+    "mercurial": {
+      "enabled": true,
+      "priority": 5,
+      "min_liquidity": 800000,
+      "max_impact": 0.09
+    }
+  },
+  
+  "tokens": {
+    "whitelist": [
+      "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "So11111111111111111111111111111111111111112",
+      "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+      "mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So",
+      "MNDEFzGvMt87ueuHvVU9VcTqsAP5b3fTGPsHuuPA5ey",
+      "7dHbWXmci3dT8UFYWYZweJXoecR4sK1BN1XSbpF17E9E",
+      "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+      "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+      "9n4nbM75f5Ui33ZbPYXn59EwSgE8CGsHtAeTH5YFeJ9E",
+      "7dHbWXmci3dT8UFYWYZweJXoecR4sK1BN1XSbpF17E9E"
+    ],
+    "blacklist": [
+      "DOGE"
+    ]
+  },
+  
+  "monitoring": {
+    "log_level": "info",
+    "log_file": "log.txt",
+    "metrics_enabled": true,
+    "alert_threshold": 0.1,
+    "performance_tracking": true
+  },
+  
+  "security": {
+    "max_transaction_value": 1000000000,
+    "rate_limiting": {
+      "max_requests_per_second": 10,
+      "burst_limit": 20
+    },
+    "whitelist_ips": [],
+    "require_authentication": false
+  },
+  
+  "performance": {
+    "pool_update_interval": 5000,
+    "price_feed_interval": 1000,
+    "arbitrage_search_interval": 2000,
+    "max_concurrent_searches": 5,
+    "memory_limit": "2GB"
+  },
+  
+  "notifications": {
+    "telegram": {
+      "enabled": false,
+      "bot_token": "",
+      "chat_id": ""
+    },
+    "discord": {
+      "enabled": false,
+      "webhook_url": ""
+    },
+    "email": {
+      "enabled": false,
+      "smtp_server": "",
+      "smtp_port": 587,
+      "username": "",
+      "password": "",
+      "recipients": []
+    }
+  },
+  
+  "advanced": {
+    "mev_protection": true,
+    "atomic_transactions": true,
+    "profit_validation": true,
+    "simulation_before_execution": true,
+    "fork_testing": false,
+    "custom_rpc_endpoints": []
+  }
+} 
