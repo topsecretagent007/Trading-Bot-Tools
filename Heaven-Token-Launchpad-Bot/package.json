@@ -1,49 +1,58 @@
 {
-  "name": "heaven-dex-launchpad-bot",
+  "name": "heaven-token-launchpad-bot",
   "version": "1.0.0",
-  "description": "A powerful and automated bot for launching tokens on Heaven DEX, built with Solana blockchain technology",
-  "main": "src/index.js",
-  "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js",
-    "test": "jest",
-    "lint": "eslint src/",
-    "format": "prettier --write src/"
-  },
-  "keywords": [
-    "solana",
-    "heaven-dex",
-    "token-launch",
-    "trading-bot",
-    "blockchain",
-    "defi",
-    "launchpad"
-  ],
-  "author": "topsecretagent007",
+  "description": "A lightweight DeFi project built on Solana for creating tokens and performing token swaps using Heaven DEX",
+  "main": "src/index.ts",
+  "author": "TopSecretAgent007",
   "license": "MIT",
-  "dependencies": {
-    "@solana/web3.js": "^1.87.6",
-    "@solana/spl-token": "^0.3.9",
-    "dotenv": "^16.3.1",
-    "axios": "^1.6.0",
-    "ws": "^8.14.2",
-    "node-cron": "^3.0.3"
-  },
-  "devDependencies": {
-    "nodemon": "^3.0.1",
-    "jest": "^29.7.0",
-    "eslint": "^8.54.0",
-    "prettier": "^3.1.0"
-  },
-  "engines": {
-    "node": ">=18.0.0"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/topsecretagent007/Trading-Bot-Tools.git"
   },
-  "bugs": {
-    "url": "https://github.com/topsecretagent007/Trading-Bot-Tools/issues"
+  "keywords": [
+    "solana",
+    "defi",
+    "heaven-dex",
+    "token-launchpad",
+    "blockchain",
+    "trading-bot"
+  ],
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/topsecretagent007/Trading-Bot-Tools#readme"
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.31.1",
+    "@fleekxyz/sdk": "^1.4.2",
+    "@solana/spl-token": "^0.4.13",
+    "@solana/web3.js": "^1.98.2",
+    "@types/multer": "^1.4.11",
+    "axios": "^1.11.0",
+    "bcryptjs": "^2.4.3",
+    "bip39": "^3.1.0",
+    "bs58": "^6.0.0",
+    "config": "^3.3.9",
+    "dotenv": "^16.6.1",
+    "gravatar": "^1.8.2",
+    "multer": "^1.4.5-lts.1",
+    "normalize-url": "^8.0.0",
+    "pre-commit": "^1.2.2",
+    "typescript": "^5.2.2",
+    "web3": "^4.2.2"
+  },
+  "devDependencies": {
+    "@daochild/tronweb-typescript": "^1.1.2",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/body-parser": "^1.19.5",
+    "@types/config": "^3.3.3",
+    "@types/dotenv": "^8.2.3",
+    "@types/express": "^4.17.21",
+    "@types/gravatar": "^1.8.6",
+    "@types/node": "^24.3.0",
+    "cross-env": "^7.0.3",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0"
+  }
 }
